@@ -15,10 +15,12 @@
             TextInput:
                 id: username
                 hint_text: "Username"
+                multiline: False
             TextInput:
                 id: password
                 password: True
                 hint_text: "Password"
+                multiline: False
             RelativeLayout:
                 Button:
                     text: "Login"
@@ -28,6 +30,7 @@
             Label:
                 id: login_wrong
                 text: ""
+                color: 1, 0, 0, 1
         GridLayout:
             cols: 2
             size_hint: 0.5, 0.5
@@ -68,10 +71,12 @@
             TextInput:
                 id: username
                 hint_text: "Username"
+                multiline: False
             TextInput:
                 id: password
                 password: True
                 hint_text: "Password"
+                multiline: False
         GridLayout:
             cols: 1
         GridLayout:
@@ -83,6 +88,7 @@
                 on_press: root.add_user(root.ids.username.text, root.ids.password.text)
             Label:
                 id: user_exists
+                color: 1, 0, 0, 1
                 text: ""
                 size_hint: 0.2, 0.2
 
